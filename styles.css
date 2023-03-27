@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,900;1,600;1,800&family=Roboto:wght@900&display=swap");
+* {
+  margin: 0; /*All elements are placed without any margin*/
+  padding: 0; /*All elements are placed without any padding*/
+  box-sizing: border-box; /*The width and height of elements will be inclusive of content, padding and border*/
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* Container Styling */
+.container {
+  max-width: 1300px; /*Sets the maximum width to 1300px. Any screens with a width larger than this will have white spaces at the right and left*/
+  margin: auto; /*Gives the browser the power to choose the favorable margin*/
+  padding-left: 25px; /*Adds a padding to the left of 25px*/
+  padding-right: 25px; /*Adds a padding to the right of 25px*/
+}
+p {
+  color: #555; /*Sets the color for all paragraph text*/
+}
+/* Navbar Styling */
+nav {
+  display: flex; /* Will place items in a row */
+  align-items: center; /*Pack elements to the center*/
+  padding: 20px; /*Adding a padding around all elements of 20px*/
+  justify-content: space-between; /*Push the elements of the navbar to the right and left*/
+}
+.parent-list {
+  display: flex;
+}
+.links ul {
+  list-style: none; /*Will remove the bullet points on the list*/
+}
+.links ul li {
+  display: inline-block; /*Arranges the links into a straight line*/
+  margin-right: 20px; /*Adds a margin of 20px to the right of each link*/
+}
+a {
+  text-decoration: none; /*Removes the underline under the links*/
+  color: #555; /*It will add a faint brown color on the links*/
+}
+.second{
+  display: flex;
+}
+/* Body background Color */
+.header {
+  background: radial-gradient(#fff, #ffd6d6);
+}
+/* Row Styling */
+.row {
+  display: flex; /*Will arrange all child elements into a row*/
+  align-items: center; /*Pack all child elements to the center*/
+  flex-wrap: wrap; /*Flex items are allowed to cover more than one line*/
+  justify-content: space-around; /*Push child elements to the extreme sides of the parent element width*/
+}
+.col-2 {
+  flex-basis: 50%; /*Sets the size of the the flex element to 50% of the parent*/
+  min-width: 300px; /*Sets minimum width of element to 300px*/
+}
+.col-2 img {
+  max-width: 100%; /*Sets the maximum width of the image to 100%*/
+  padding: 50px 0; /*Adds a 50px padding on the top and bottom while maintaining a 0 margin on the left and right*/
+}
+.col-2 h1 {
+  font-size: 50px; /*Increases the font size of the h1 by 50px*/
+  line-height: 60px; /*Sets the space between the top and bottom line to 60px*/
+  margin: 25px 0; /*Sets the top and bottom margin to 25px and 0 for left and right*/
+}
+.btn {
+  display: inline-block; /*Arranges all elements in a straight line*/
+  background: #ff523b; /*Provides a background color*/
+  color: #fff; /*Provides a text color of white*/
+  padding: 8px 30px; /*Top and bottom padding of 8px and left and right padding of 30px*/
+  margin: 30px 0; /*top and bottom margin of 30px and left and right margin of 0*/
+  border-radius: 30px; /*Curves the four corners of our button by 30px*/
+  transition: background 0.5s; /*It will apply a transition change speed of 0.5s to the background of the button*/
+}
+.btn:hover {
+  background: #563434; /*Background when mouse hovers over button*/
+}
+
+/* Featured Section */
+.category {
+  margin: 70px 0; /*Sets a margin of 70px on the top and bottom and o at the left and right of the category element*/
+}
+.col-3 {
+  flex-basis: 30%; /*Every child element in the flex element to cover 30% of the flex element*/
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+.col-3 img {
+  width: 100%;
+}
+.small-container {
+  max-width: 1080px; /*Sets the max width to 1080px*/
+  margin: auto; /*Centers elements*/
+  padding-left: 25px; /*Gives a padding of 25px to the left*/
+  padding-right: 25px; /*Gives a padding of 25px to the right*/
+}
+/* Featured Product section */
+.col-4 {
+  flex-basis: 25%; /*will cover 25% of the parent row element*/
+  padding: 10px; /*It will add a padding of 10px around the element*/
+  min-width: 200px; /*Sets the minimum width of a card to 200px*/
+  margin-bottom: 50px; /*Sets a margin of 50px at the bottom of the card*/
+  transition: transform 0.5s;
+}
+.col-4 img {
+  width: 100%; /*Covers the entire width of the card*/
+}
+.title {
+  text-align: center; /*Packs textt to the center*/
+  margin: 0 auto 80px; /*Will let the browser to determine the left and right margins and give a margin bottom of 80px*/
+  position: relative; /*Positioned in line with the normal flow*/
+  line-height: 60px; /*Adds space bewteen the top and bottom line of the text*/
+  color: #555; /*Changes the color to a light brown*/
+}
+.title::after {
+  content: ""; /*Its content will be blank*/
+  background: #ff523b; /*Changes the background color*/
+  width: 80px; /*Line will have a width of 80px*/
+  height: 5px; /*The line height will be 5px*/
+  border-radius: 5px; /*Provides a border radius of 5px size*/
+  position: absolute; /*Alters the position of the line against the flow of the document*/
+  bottom: 0; /*Places the line at the bottom with no space at the bottom*/
+  left: 50%; /*It will move the line 50% from the margin of the title*/
+  transform: translateX(-50%); /*Will move the line 50% towards the left size*/
+}
+h4 {
+  color: #555; /*Changes the color of the title*/
+  font-weight: normal; /*Sets the font weight to normal */
+}
+.col-4 p {
+  font-size: 14px; /*Sets the font size of the price to 14px*/
+}
+.rating .fa-solid {
+  color: #ff523b; /*Changes the color of our icons*/
+}
+.col-4:hover {
+  transform: translateY(5px); /*Adds a hover moving effect to move by 5px*/
+}
+/* Offer section */
+.offer {
+  background: radial-gradient(#fff, #ffd6d6); /*Offers a radial background*/
+  margin-top: 80px; /*Offers a margin of 80px at the top*/
+  padding: 30px 0; /*Offers a padding of 30px on the top and bottom and of 0 on the left and right*/
+}
+.col-2 .offer-img {
+  padding: 50px;
+}
+small {
+  color: #555;
+}
+
+/* Testimonial  */
+.testimonial {
+  padding-top: 100px; /*Add a top padding of 100px*/
+}
+.testimonial .col-3 {
+  text-align: center; /*Align text to the center*/
+  padding: 40px 20px; /*Add a padding of 40px to the top and bottom and of 20px to the right and left*/
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1); /*Adds a shadow of size 0 from the X and Y axis with a blur radius of 20px/
+  cursor: pointer;/*Changes cursor to a pointer once mouse gets into this section*/
+  transition: transform 0.5s; /*Transition Speed*/
+}
+.testimonial .col-3 img {
+  width: 50px; /*Sets the width of the images to 50px*/
+  margin-top: 20px; /*Add a margin to the top of 20px*/
+  border-radius: 50%; /*Will shape the image into a circle*/
+}
+.testimonial .col-3:hover {
+  transform: translateY(-10px); /*Transform along the Y axis once hover over*/
+}
+.fa-quote-left {
+  font-size: 34px;
+  color: #ff523b;
+}
+.col-3 p {
+  font-size: 12px;
+  margin: 12px 0;
+  color: #777;
+}
+.testimonial .col-3 h3 {
+  font-weight: 600;
+  color: #555;
+  font-size: 16px;
+}
+
+/* Brands Section */
+.brands {
+  margin: 10px auto; /*Adds a margin of 10px on the top and bottom leaving the browser to decide for the left and right*/
+}
+.col-5 {
+  width: 100px; /*Sets the width to 100px*/
+}
+.col-5 img {
+  width: 100%; /*Covers the entire width of the parent class*/
+  cursor: pointer; /*Sets the cursor to a pointing hand*/
+  filter: grayscale(100%); /*Provides a gray overlay over the images*/
+}
+.col-5 img:hover {
+  filter: grayscale(0); /*Removes the gray overlay on hover*/
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+.footer p {
+  color: #8a8a8a;
+}
+.footer h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+.footer-col-1 {
+  flex-basis: 30%;
+}
+.footer-col-2 {
+  flex: 1; /*Covers the entire available space*/
+  text-align: center;
+}
+.footer-col-2 img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+.footer-col-3,
+.footer-col-4 {
+  flex-basis: 12%;
+  text-align: center;
+}
+ul {
+  list-style-type: none; /*Removes bullet points*/
+}
+.app-logo {
+  margin-top: 20px;
+}
+.app-logo img {
+  width: 140px;
+}
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+.copyright {
+  text-align: center;
+}
+
+.menu-icon {
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+
+/* Media Quaries */
+@media only screen and (max-width: 800px) {
+  .links .first {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  .links .first li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .links .first li a {
+    color: #fff;
+  }
+  .menu-icon{
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/* Media Quareis for screens less than 600px */
+@media only screen and (max-width: 600px) {
+  .row{
+    text-align: center;
+  }
+  .col-2, .col-3, .col-4{
+    flex-basis: 100%;
+  }
+}
